@@ -115,6 +115,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular8-demo"
+    }
+  },
+  "defaultProject": "angular8-demo",
+  "cli": {
+    "analytics": "331d35e3-ed80-47c9-8b41-635d20672291"
+  }
 }

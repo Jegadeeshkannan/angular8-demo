@@ -11,6 +11,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {ApiService} from "./service/api.service";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {TokenInterceptor} from "./core/interceptor";
+import { MachinesComponent } from './machines/machines.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {TokenInterceptor} from "./core/interceptor";
     ListUserComponent,
     LoginComponent,
     AddUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    MachinesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,4 +33,5 @@ import {TokenInterceptor} from "./core/interceptor";
     multi : true}],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
