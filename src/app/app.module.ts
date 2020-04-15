@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {FlexLayoutModule} from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { ListUserComponent } from './user/list-user/list-user.component';
 import { LoginComponent } from './login/login.component';
@@ -26,7 +26,8 @@ import { MachinesComponent } from './machines/machines.component';
     BrowserModule,
     routing,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [ApiService, {provide: HTTP_INTERCEPTORS,
     useClass: TokenInterceptor,
